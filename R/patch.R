@@ -33,7 +33,8 @@ patch.data.frame <- function(object, cond, ..., quiet = FALSE) {
   masks <- lazyeval::lazy_eval(cond, object)
   i <- which(apply(do.call(cbind, masks), 1, all))  # rows to be patched
   if (length(i) == 0) {
-    warning("conditions are not all TRUE for any rows: nothing patched")
+    if(!quiet) message("Nothing patched")
+    return(object)
   } else {
     if (!quiet) message("Patching ", length(i), " rows")
   }
