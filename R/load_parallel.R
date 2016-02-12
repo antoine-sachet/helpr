@@ -5,6 +5,7 @@
 #
 ########################################
 
+##' @export
 load_parallel <- function(nbClust = 2) {
   if(!require("doParallel")) {
     stop("Please install 'doParallel' or similar parallel back-end prior to running load_parallel.")

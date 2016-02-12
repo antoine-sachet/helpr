@@ -14,6 +14,7 @@
   # -----------------------------------------------------------------------------
 
   # Makes "number" the default choice for 'orderBy'
+##' @export
 color_chart <- function(orderBy = c("number", "hue"))  {
   if ( length(orderBy) > 1 ) oBy = tolower(orderBy[1]) else oBy = tolower(orderBy)
 
@@ -107,6 +108,7 @@ color_chart <- function(orderBy = c("number", "hue"))  {
 # 'num.col = the number of columns in the color display.
 
 
+##' @export
 show_colors <- function (start.num = 1, Labels = T, num.row = 15, num.col = 4)
 {
   top <- 97

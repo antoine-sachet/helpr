@@ -9,6 +9,7 @@
 # allow to have a vector as switch EXPR
 # Syntax:
 # vswitch(sample(letters, 5), a="first", b="second", ">3")
+##' @export
 vswitch <- function(EXPR, ...) {
   sapply(EXPR, FUN=function(x) switch(x, ...))
 }
@@ -19,7 +20,8 @@ vswitch <- function(EXPR, ...) {
 # rename_levels(fac, old=c("PC", "laptop), new=c("computer", "computer"))
 # rename_levels(fac, old=c("PC", "TV"), new=c("computer", "television"))
 # Note: will *not* mess up the "computer" level if it already exists
-function(fac, old, new) {
+##' @export
+rename_levels <- function(fac, old, new) {
   n <- length(old)
   if(length(new) != n & length(new)!=1) {
     stop("Length of new levels vector must be 1 or the length of the old levels vector.")
@@ -37,6 +39,9 @@ function(fac, old, new) {
 }
 
 # simple shorthand
+##' @export
 `%!in%` <- function(x, y) {
   !(x %in% y)
 }
+
+change_levels <- rename_levels

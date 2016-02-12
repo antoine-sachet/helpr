@@ -12,6 +12,7 @@
 #   update_progress_bar()
 # }
 
+##' @export
 reset_progress_bar <- function(loop_data, title=NULL, by="", ...) {
   .progress_bar_counter <<- 0
 
@@ -35,6 +36,7 @@ reset_progress_bar <- function(loop_data, title=NULL, by="", ...) {
                                    width = getOption("width")/2, ...)
 }
 
+##' @export
 update_progress_bar <- function(value=NULL, ...) {
   if(!exists(".progress_bar")|!exists(".progress_bar_counter")){
     warning("Please call reset_progress_bar prior to calling update_progress_bar")

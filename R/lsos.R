@@ -8,6 +8,7 @@
 ########################################
 
 # improved list of objects
+##' @export
 .ls.objects <- function (pos = 1, pattern, order.by,
                          decreasing=FALSE, head=FALSE, n=5) {
   napply <- function(names, fn) sapply(names, function(x)
@@ -33,6 +34,7 @@
 }
 
 # shorthand
+##' @export
 lsos <- function(..., n=10) {
   .ls.objects(..., order.by="Size", decreasing=TRUE, head=TRUE, n=n)
 }
