@@ -1,13 +1,16 @@
 Package: customFunctions
 Type: Package
 Title: Helper functions for various common tasks
-Version: 1.0.0
+Version: 1.2.2
 Date: 2016-02-04
 Authors@R: person("Antoine", "Sachet", email = "antoine.sac@gmail.com",
   role = c("aut", "cre"))
 Imports:
     foreach,
-    dplyr
+    dplyr,
+    Hmisc,
+    ggplot2,
+    RColorBrewer
 Description: Contains miscellaneous functions for memory management, data
     manipulation (extending dplyr), input/output, shorthands for common operations,
     etc.
