@@ -5,14 +5,24 @@
 # txtProgressBar()
 ########################
 
-# ## Typical use:
-# reset_progress_bar(big_vec)
-# foreach(vec=big_vec) %do% {
-#   # ...
-#   update_progress_bar()
-# }
+#' Progress bar facility
+#'
+#' @name progress_bar
+#'
+#' @description Straightforward progress bar based on `textProgressBar`, suitable for use with a linear foreach.
+#'
+#' @examples
+#' \dontrun{
+#' reset_progress_bar(big_vec)
+#' foreach(vec=big_vec) %do% {
+#'   # ...
+#'   update_progress_bar()
+#'   }
+#' }
+NULL
 
-##' @export
+#' @describeIn progress_bar Prepare the progress bar to loop over some data
+#' @export
 reset_progress_bar <- function(loop_data, title=NULL, by="", ...) {
   .progress_bar_counter <<- 0
 
@@ -36,7 +46,8 @@ reset_progress_bar <- function(loop_data, title=NULL, by="", ...) {
                                    width = getOption("width")/2, ...)
 }
 
-##' @export
+#' @describeIn progress_bar Update the progress bar value
+#' @export
 update_progress_bar <- function(value=NULL, ...) {
   if(!exists(".progress_bar")|!exists(".progress_bar_counter")){
     warning("Please call reset_progress_bar prior to calling update_progress_bar")

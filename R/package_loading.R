@@ -7,16 +7,22 @@
 ###################
 
 
-##' @export
-lib <- function(p, ...) {
+#' Load several packages in one go
+#'
+#' Packages should be given as characters.
+#'
+#' @examples \dontrun{lib("ggplot2", "RColorBrewer")}
+#' @export
+lib <- function(...) {
   invisible(
-    lapply(p, FUN=base::library, character.only=T, ...)
+    lapply(list(...), FUN=base::library, character.only=T)
   )
 }
 
-##' @export
-req <- function(p, ...) {
+#' @describeIn lib Same with `require`
+#' @export
+req <- function(...) {
   invisible(
-    lapply(p, FUN=base::require, character.only=T, ...)
+    lapply(list(...), FUN=base::require, character.only=T, ...)
   )
 }

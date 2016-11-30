@@ -6,7 +6,9 @@
 #   https://faculty.washington.edu/jmiyamot/zmisc/downloads.htm
 ########################################
 
-##' @export
+#' Move objects to and from .rda files
+#' @seealso rm.sv
+#' @export
 move <- function( listObjects, to,
                   from             = ".GlobalEnv",
                   fn.object        = FALSE,
@@ -298,7 +300,9 @@ move <- function( listObjects, to,
 
 move.doc <- "The function 'move' either moves or copies an R object from one environment on the search path to another environment on the search path.  Typically, it moves an object from .GlobalEnv to a file that is attached to the search path.  By default, it deletes the object from the environment that initially contained it, but this default can be overridden.  Also, by default, the move is not carried out if an object with the same name exists in the destination directory, but this default can also be overridden (replace.objects=T).  Character objects must be referenced as names in quotes - single non-character objects can, but need not be referenced in this way.  The move function also applies to a character vector of object names, in which case the object names must be quoted. \n\nARGUMENTS:\n\n'list' = object to be moved;  or a character vector of object names.\n\n'to' = the destination file to which the objects are to be move.  'to' can be specified as either a position, e.g., 'to = 3', or as a named environment, e.g., 'to = \"data.rda\"'.  Partial matching is used to match the named environment if an incomplete name is given. \n\n'from' = the source file or environment from which the objects are to be moved.  'from' can be specified as either a position, e.g., 'from = 3', or as a named environment, e.g., 'from = \"data.rda\"'. Partial matching is used to match the named environment if an incomplete name is given. \n\n'fn.object = FALSE' (default) means that the object to be moved is in a file on the search path (starting with .GlobalEnv).  'fn.object = TRUE' should be used only if the 'move' function is called by another function. 'fn.object = TRUE' means that the the object to be moved is within the environment created by a calling function.  In this case, the object exists in an environment that is not named by the 'search()' function.  \n\n'replace.objects' = T to replace a same name object in destination directory; If 'replace.objects' = F, then no move is carried out when a same name object exists in the destination file. \n\n'move.doc.objects = TRUE' causes XXX.doc objects to be moved along with the XXX object.  If FALSE, only the XXX object is moved.\n\nIf 'copy.only' = TRUE, then the object is copied to the destination file, but is not deleted from the source environment.  If it is FALSE, then the object is deleted after copying it to the destination file.  The default is 'copy.only = FALSE'.\n\nIf 'feedback = TRUE' (default), then feedback is printed to the screen regarding which objects have been successfully moved and which moves have failed.  If 'feedback = FALSE', this feedback is suppressed.\n\nIf 'map = TRUE', a table showing the existence and replacement of objects is displayed; if FALSE, no table is displayed. The default is 'map = TRUE'. \n"
 
-##' @export
+#' Remove object from any location on the searchpath
+#'
+#' @export
 rm.sv <- function(list, env.on.path = "", pos = NA, rm.doc.objects = FALSE,
                   feedback = TRUE)  {
 

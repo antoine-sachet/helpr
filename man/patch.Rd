@@ -10,7 +10,7 @@ patch(object, cond, ...)
 
 \method{patch}{data.frame}(object, cond, ..., quiet = FALSE)
 
-where(..., .follow_symbols = FALSE)
+where(..., .follow_symbols = FALSE, .ignore_empty = FALSE)
 }
 \arguments{
 \item{object}{Data.frame to patch}
@@ -27,9 +27,11 @@ Performs one or several 'mutate' on a data.frame, but only on rows matching the 
 \examples{
 patch(mtcars, where(vs == 0, am == 1), gear = Inf, carb = carb + 10)
 
-# Setting incorrect values in data$pos_var to NA
-# Setting corresponding related_var observations to NA
-data \%>\% patch(where(pos_var<0), pos_var=NA, related_var=NA)
+\dontrun{
+# Also setting corresponding related_var observations to NA
+# Setting incorrect (negative) values in data$positive_var to NA
+mydata \%>\% patch(where(positive_var<0), positive_var=NA, related_var=NA)
+}
 }
 \author{
 Antoine Sachet

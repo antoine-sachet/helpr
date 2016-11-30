@@ -13,8 +13,10 @@
   # His code has been modified in minor ways.
   # -----------------------------------------------------------------------------
 
-  # Makes "number" the default choice for 'orderBy'
-##' @export
+#' Show all colors of base R in a concise table.
+#'
+#' @seealso color_chart
+#' @export
 color_chart <- function(orderBy = c("number", "hue"))  {
   if ( length(orderBy) > 1 ) oBy = tolower(orderBy[1]) else oBy = tolower(orderBy)
 
@@ -95,20 +97,16 @@ color_chart <- function(orderBy = c("number", "hue"))  {
 }
 
 
-# displays the codes for colors in R.
-#
-# ARGUMENTS:
-#
-#   'start.num = the number of the first color to be displayed.  The  default setting displays the colors in 60 color increments.
-#
-# 'Labels = T if color labels are desired; Labels = F to omit.
-#
-# 'num.row = the number of rows in the color display.
-#
-# 'num.col = the number of columns in the color display.
-
-
-##' @export
+#' Display the codes for colors in R
+#'
+#' Adapted from http://research.stowers-institute.org/efg/R/Color/Chart/index.htm.
+#'
+#' @param start.num the number of the first color to be displayed.  The  default setting displays the colors in 60 color increments.
+#' @param Labels T if color labels are desired; F to omit.
+#' @param num.row the number of rows in the color display.
+#' @param num.col the number of columns in the color display.
+#' @seealso color_chart
+#' @export
 show_colors <- function (start.num = 1, Labels = T, num.row = 15, num.col = 4)
 {
   top <- 97

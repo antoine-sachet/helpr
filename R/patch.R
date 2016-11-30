@@ -16,9 +16,11 @@
 ##' @examples
 ##' patch(mtcars, where(vs == 0, am == 1), gear = Inf, carb = carb + 10)
 ##'
-##' # Setting incorrect values in data$pos_var to NA
-##' # Setting corresponding related_var observations to NA
-##' data %>% patch(where(pos_var<0), pos_var=NA, related_var=NA)
+##' \dontrun{
+##' # Also setting corresponding related_var observations to NA
+##' # Setting incorrect (negative) values in data$positive_var to NA
+##' mydata %>% patch(where(positive_var<0), positive_var=NA, related_var=NA)
+##' }
 ##' @export
 patch <- function(object, cond, ...){
   UseMethod("patch")
@@ -26,6 +28,7 @@ patch <- function(object, cond, ...){
 
 ##' @rdname patch
 ##' @method patch data.frame
+##' @importFrom lazyeval lazy_eval
 ##' @export
 patch.data.frame <- function(object, cond, ..., quiet = FALSE) {
 
@@ -49,6 +52,7 @@ patch.data.frame <- function(object, cond, ..., quiet = FALSE) {
   return(object)
 }
 
-##' @rdname patch
-##' @export
+#' @rdname patch
+#' @importFrom lazyeval lazy_eval
+#' @export
 where <- lazyeval::lazy_dots
