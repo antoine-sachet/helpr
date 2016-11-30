@@ -59,6 +59,14 @@ fp <- print.data.frame
 #' @export
 hfp <- function(x, ...) x %>% head(...) %>% fp
 
+#' Group_by with regex based column selection
+#'
+#' Similar to `group_by` except grouping columns are selected using a regex.
+#' @importFrom dplyr group_by
+#' @export
+group_at <- function(df, pattern)
+  group_by_(df, .dots=grep(names(df), pattern=pattern, value=T))
+
 
 #' Identify rows containing a NA
 #'
