@@ -2,9 +2,7 @@
 % Please edit documentation in R/roxygen_export_all.R
 \name{roxygen_export_all}
 \alias{roxygen_export_all}
-\title{Adds roxygen @export to all functions in R files in the specified directory.
-(Except those indented, which are assumed to be defined within a function.)
-It does nothing to already exported functions, as long as the export statement is just above the function defition.}
+\title{Add 'export tag to all functions}
 \usage{
 roxygen_export_all(dir, verbose = T)
 }
