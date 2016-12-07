@@ -55,6 +55,8 @@ vswitch <- function(EXPR, ...) {
 #' rename_levels(fac, old="minitel", new="oldie")
 #' @export
 rename_levels <- function(fac, old, new) {
+  if(!("factor" %in% class(fac))) warning("fac is not a factor - no levels to rename!")
+
   n <- length(old)
   if(length(new) != n & length(new)!=1) {
     stop("Length of `new` must be 1 or the length of `old`.")
