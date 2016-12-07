@@ -10,7 +10,10 @@ Imports:
     dplyr,
     Hmisc,
     ggplot2,
-    RColorBrewer
+    RColorBrewer,
+    lazyeval,
+    magrittr,
+    stringi
 Description: Contains miscellaneous functions for memory management, data
     manipulation (extending dplyr), input/output, shorthands for common operations,
     etc.
