@@ -32,7 +32,7 @@ mqmmqm <- function(x, na.rm=T, digits=1, space=T) {
 #'
 #' @export
 msd <- function(x, na.rm=F, digits=1, ...) {
-  paste0(round(mean(x, na.rm=na.rm, ...), digits=digits),
-         " ± ",
+  paste(round(mean(x, na.rm=na.rm, ...), digits=digits),
+         intToUtf8(177), #plus-minus sign
          round(sd(x, na.rm=na.rm), digits=digits))
 }
