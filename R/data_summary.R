@@ -1,17 +1,17 @@
 
 #' Numeric summary in one string
 #'
-#'  Returns a string containing a five-number summary and the mean of a numeric vector.
-#'  The names stands for what is being reported: minimum, 1st quartile, median, mean, 3d quartile, maximum.
+#' Returns a string containing a five-number summary and the mean of a numeric vector.
+#' The names stands for what is being reported: minimum, 1st quartile, median, mean, 3d quartile, maximum.
 #'
-#'  @param x Numeric vector
-#'  @param na.rm Whether to ignore NAs
-#'  @param digits Digits to use for rounding
-#'  @param space Whether to use spacing in the output
+#' @param x Numeric vector
+#' @param na.rm Whether to ignore NAs
+#' @param digits Digits to use for rounding
+#' @param space Whether to use spacing in the output
 #'
-#'  @seealso msd, fivenum
+#' @seealso msd, fivenum
 #'
-#'  @export
+#' @export
 mqmmqm <- function(x, na.rm=T, digits=1, space=T) {
   fn <- round(fivenum(x, na.rm=na.rm), digits=digits)
   m <- round(mean(x, na.rm=na.rm), digits=digits)

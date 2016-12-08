@@ -6,18 +6,20 @@
 \usage{
 mqmmqm(x, na.rm = T, digits = 1, space = T)
 }
+\arguments{
+\item{x}{Numeric vector}
+
+\item{na.rm}{Whether to ignore NAs}
+
+\item{digits}{Digits to use for rounding}
+
+\item{space}{Whether to use spacing in the output}
+}
 \description{
 Returns a string containing a five-number summary and the mean of a numeric vector.
- The names stands for what is being reported: minimum, 1st quartile, median, mean, 3d quartile, maximum.
+The names stands for what is being reported: minimum, 1st quartile, median, mean, 3d quartile, maximum.
 }
-\details{
-@param x Numeric vector
- @param na.rm Whether to ignore NAs
- @param digits Digits to use for rounding
- @param space Whether to use spacing in the output
-
-@seealso msd, fivenum
-
-@export
+\seealso{
+msd, fivenum
 }
 
