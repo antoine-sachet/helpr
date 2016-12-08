@@ -1,7 +1,7 @@
 Package: customFunctions
 Type: Package
 Title: Helper functions for various common tasks
-Version: 1.2.3
+Version: 1.2.4
 Date: 2016-02-04
 Authors@R: person("Antoine", "Sachet", email = "antoine.sac@gmail.com",
   role = c("aut", "cre"))
