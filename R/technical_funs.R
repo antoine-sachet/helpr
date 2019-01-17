@@ -74,9 +74,15 @@ rename_levels <- function(fac, old, new) {
 }
 
 
-#' @title `not in` operator
+#' @title 'Not \%in\%' operator
+#' 
 #' @description Shorthand for \code{!(x \%in\% y)}
+#' 
 #' @usage x \%!in\% y
+#' 
+#' @seealso %in%
+#' 
+#' @name not-in-binary-op
 #' @export
 `%!in%` <- function(x, y) {
   !(x %in% y)

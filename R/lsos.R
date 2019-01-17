@@ -9,13 +9,25 @@
 
 #' List objects in the global environment
 #'
-#' An improved version of `ls`. Very convenient for managing memory.
+#' List objects in memory: name, type, dims, byte size, etc. 
+#' The shorthand `lsos()` is very convenient for tracking memory usage.
 #'
-#' Credit goes to http://stackoverflow.com/questions/1358003/tricks-to-manage-the-available-memory-in-an-r-session.
+#' @return Data.frame containing object and memory information
 #'
+#' @param pos 
+#' @param pattern 
+#' @param order.by 
+#' @param decreasing 
+#' @param head 
+#' @param n 
 #'
+#' @describeIn ls.objects Advanced printing
+#' @note http://stackoverflow.com/questions/1358003/tricks-to-manage-the-available-memory-in-an-r-session.
+#' 
+#' @examples lsos()
+#' 
 #' @export
-.ls.objects <- function (pos = 1, pattern, order.by,
+ls.objects <- function (pos = 1, pattern, order.by,
                          decreasing=FALSE, head=FALSE, n=5) {
   napply <- function(names, fn) sapply(names, function(x)
     fn(get(x, pos = pos)))
@@ -46,8 +58,8 @@
   out
 }
 
-#' @describeIn .ls.objects shorthand printing the 10 biggest elements
+#' @describeIn ls.objects Print the 10 largest objects in memory, ordered by size.
 #' @export
 lsos <- function(..., n=10) {
-  .ls.objects(..., order.by="Size", decreasing=TRUE, head=TRUE, n=n)
+  ls.objects(..., order.by="Size", decreasing=TRUE, head=TRUE, n=n)
 }
