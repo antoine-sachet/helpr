@@ -12,4 +12,3 @@ Show all colors of base R in a concise table.
 \seealso{
 color_chart
 }
-

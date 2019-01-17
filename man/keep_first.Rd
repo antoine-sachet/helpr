@@ -21,7 +21,7 @@ More or less equivalent to `keep_one`
 
 \item \code{default}: Default method
 }}
+
 \seealso{
 keep_one
 }
-

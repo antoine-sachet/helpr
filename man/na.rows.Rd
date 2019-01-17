@@ -9,4 +9,3 @@ na.rows(df)
 \description{
 Takes a data.frame and returns a logical vector indicating the rows containing a NA.
 }
-

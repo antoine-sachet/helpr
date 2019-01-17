@@ -9,4 +9,3 @@ split_camel(str)
 \description{
 Turn camel case into regular spaced words
 }
-

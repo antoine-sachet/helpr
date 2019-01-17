@@ -12,4 +12,3 @@ isFileEmpty(file)
 \description{
 A vectorised wrapper around file.info which checks whether the size of the file on disk is exactly 0.
 }
-

@@ -9,4 +9,3 @@ pretty_colnames(df)
 \description{
 Format the column names of a data.frame for pretty printing
 }
-

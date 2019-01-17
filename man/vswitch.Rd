@@ -19,4 +19,3 @@ The `switch` operator cannot be applied to a vector.
 x <- letters[1:5]
 vswitch(x, a="first", b="second", ">3")
 }
-

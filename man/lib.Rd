@@ -16,7 +16,7 @@ Packages should be given as characters.
 \itemize{
 \item \code{req}: Same with `require`
 }}
+
 \examples{
 \dontrun{lib("ggplot2", "RColorBrewer")}
 }
-

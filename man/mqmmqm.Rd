@@ -22,4 +22,3 @@ The names stands for what is being reported: minimum, 1st quartile, median, mean
 \seealso{
 msd, fivenum
 }
-

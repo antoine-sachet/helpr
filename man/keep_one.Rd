@@ -35,4 +35,3 @@ pupils_results <- school_results \%>\%
                              gender=keep_one(gender))
 
 }
-

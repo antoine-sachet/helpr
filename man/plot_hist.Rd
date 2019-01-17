@@ -23,4 +23,3 @@ Convenience function to plot a histogram with a pipe-compatible interface.
 \examples{
  mtcars \%>\% plot_hist("mpg")
 }
-

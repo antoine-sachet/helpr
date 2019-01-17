@@ -13,4 +13,3 @@ Only rows with at least one NA in at least one of the selected columns are kept 
 \seealso{
 remove_na
 }
-

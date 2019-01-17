@@ -36,4 +36,3 @@ mydata \%>\% patch(where(positive_var<0), positive_var=NA, related_var=NA)
 \author{
 Antoine Sachet
 }
-

@@ -21,4 +21,3 @@ Adapted from http://research.stowers-institute.org/efg/R/Color/Chart/index.htm.
 \seealso{
 color_chart
 }
-

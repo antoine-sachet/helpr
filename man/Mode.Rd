@@ -36,4 +36,3 @@ Mode(x)
 \author{
 Ken Williams
 }
-

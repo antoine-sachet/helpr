@@ -17,4 +17,3 @@ and moving said columns to the front of the data.frame.
 \seealso{
 dplyr::arrange
 }
-

@@ -13,4 +13,3 @@ load_parallel(nbClust = 2, verbose = T)
 Builds a local cluster of nbClust nodes and registers it as parallel backend.
 Will also try to stop any cluster previously created by the function.
 }
-

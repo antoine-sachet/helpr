@@ -19,6 +19,7 @@ Straightforward progress bar based on `textProgressBar`, suitable for use with a
 
 \item \code{update_progress_bar}: Update the progress bar value
 }}
+
 \examples{
 \dontrun{
 reset_progress_bar(big_vec)
@@ -28,4 +29,3 @@ foreach(vec=big_vec) \%do\% {
   }
 }
 }
-

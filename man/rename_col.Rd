@@ -23,4 +23,3 @@ col_to_change <- "a"
 df \%>\% rename_col(col_to_change, "c")
 
 }
-

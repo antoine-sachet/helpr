@@ -16,4 +16,3 @@ Adds roxygen @export to all functions in R files in the specified directory.
 (Except those indented, which are assumed to be defined within a function.)
 It does nothing to already exported functions, as long as the export statement is just above the function defition.
 }
-

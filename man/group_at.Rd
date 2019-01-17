@@ -9,4 +9,3 @@ group_at(df, pattern)
 \description{
 Similar to `group_by` except grouping columns are selected using a regex.
 }
-

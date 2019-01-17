@@ -21,4 +21,3 @@ Returns a string in format "mean ± sd".
 \seealso{
 mqmmqm, fivenum
 }
-

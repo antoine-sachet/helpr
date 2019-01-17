@@ -45,4 +45,3 @@ rename_levels(fac, old=c("PC", "laptop"), new=c("computer"))
 # Replacement of inexisting level
 rename_levels(fac, old="minitel", new="oldie")
 }
-

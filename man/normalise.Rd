@@ -16,4 +16,3 @@ normalise(mat, by = "col", norm = 1)
 \description{
 Normalises rows or columns of a matrix according to the L1 or L2 norm.
 }
-

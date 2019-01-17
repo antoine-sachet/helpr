@@ -9,4 +9,3 @@ capitalize(string)
 \description{
 Taken from the Hmisc package.
 }
-

@@ -14,4 +14,3 @@ It not 'imported' from Hmisc because Hmisc's developpers are not bothered to dea
 \details{
 #@seealso \link[Hmisc]{cut2}
 }
-

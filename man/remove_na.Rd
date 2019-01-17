@@ -13,4 +13,3 @@ It is a wrapper around dplyr's `select` and `complete.cases`.
 \seealso{
 keep_na
 }
-

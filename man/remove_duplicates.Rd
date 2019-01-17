@@ -9,4 +9,3 @@ remove_duplicates(df)
 \description{
 Removes exact duplicates using `duplicated`.
 }
-

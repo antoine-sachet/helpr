@@ -9,4 +9,3 @@ point2space(chr)
 \description{
 Turn dots and underscores to spaces in a string
 }
-

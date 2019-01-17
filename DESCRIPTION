@@ -18,5 +18,6 @@ Description: Contains miscellaneous functions for memory management, data
     manipulation (extending dplyr), input/output, shorthands for common operations,
     etc.
 License: None yet.
+Encoding: UTF-8
 LazyData: TRUE
-RoxygenNote: 5.0.1
+RoxygenNote: 6.1.1

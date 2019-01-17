@@ -5,7 +5,8 @@
 \alias{hfp}
 \title{Full print of data.frame}
 \usage{
-fp(x, ..., digits = NULL, quote = FALSE, right = TRUE, row.names = TRUE)
+fp(x, ..., digits = NULL, quote = FALSE, right = TRUE,
+  row.names = TRUE, max = NULL)
 
 hfp(x, ...)
 }
@@ -16,7 +17,7 @@ Shorthand for `print.data.frame`, useful for occasional full printing of a dplyr
 \itemize{
 \item \code{hfp}: Wrapper around head and fp. Arguments are passed to head.
 }}
+
 \seealso{
 print.data.frame hfp
 }
-

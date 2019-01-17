@@ -9,4 +9,3 @@ keep_na_rows(df)
 \description{
 Keep only rows containing a NA
 }
-
