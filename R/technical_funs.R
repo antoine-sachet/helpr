@@ -80,7 +80,7 @@ rename_levels <- function(fac, old, new) {
 #' 
 #' @usage x \%!in\% y
 #' 
-#' @seealso %in%
+#' @seealso \%in\%
 #' 
 #' @name not-in-binary-op
 #' @export
