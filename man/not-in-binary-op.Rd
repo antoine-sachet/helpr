@@ -11,5 +11,5 @@ x \%!in\% y
 Shorthand for \code{!(x \%in\% y)}
 }
 \seealso{
-%in%
+\%in\%
 }
