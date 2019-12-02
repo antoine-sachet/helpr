@@ -11,7 +11,8 @@ reset_progress_bar(loop_data, title = NULL, by = "", ...)
 update_progress_bar(value = NULL, ...)
 }
 \description{
-Straightforward progress bar based on `textProgressBar`, suitable for use with a linear foreach.
+Straightforward progress bar based on `textProgressBar`, 
+suitable for use with a linear `for` or `foreach` loop.
 }
 \section{Functions}{
 \itemize{

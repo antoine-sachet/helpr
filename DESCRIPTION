@@ -1,14 +1,12 @@
-Package: customFunctions
+Package: helpr
 Type: Package
 Title: Helper functions for various common tasks
-Version: 1.2.4
-Date: 2016-02-04
+Version: 0.0.1
+Date: 2019-03-04
 Authors@R: person("Antoine", "Sachet", email = "antoine.sac@gmail.com",
   role = c("aut", "cre"))
 Imports:
-    foreach,
     dplyr,
-    Hmisc,
     ggplot2,
     RColorBrewer,
     lazyeval,
@@ -19,7 +17,9 @@ Imports:
 Description: Contains miscellaneous functions for memory management, data
     manipulation (extending dplyr), input/output, shorthands for common operations,
     etc.
-License: None yet.
+License: MIT
 Encoding: UTF-8
 LazyData: TRUE
 RoxygenNote: 6.1.1
+Suggests: 
+    testthat

@@ -1,4 +1,3 @@
-
 #' Numeric summary in one string
 #'
 #' Returns a string containing a five-number summary and the mean of a numeric vector.
